@@ -4,6 +4,12 @@ The code contained in this repository demonstrates the creation of Siamese Netwo
 
 Implemented a pre-trained Siamese Network using Convolutional Neural Networks, Attention mechanism, Transformers and more, called ![SarasNET](https://github.com/f64051041/SARAS-Net) to apply on satellite imagery data to develop a change detection model. The SarasNET is fine-tuned on different datasets such as CDD dataset to output relevant change masks.
 
+### Entirely Unsupervised Approach for Change detection:
+
+The model is trained to output a similarity score between two images without using any ground truth image masks. We use Siamese Networks for this & this model may prove to be useful in an alert system where if a higher than normal similarity is output from the model given two bi-temporal images of the same location, then it may be worth for the inspectors or the land authorities to take action.
+
+Below are tensorboard screenshots from the training process:
+
 ![image](https://user-images.githubusercontent.com/51030860/228424922-9c59f2bd-cf81-48e7-b4bf-45b4bb9d8d46.png)
 ![image](https://user-images.githubusercontent.com/51030860/228424949-a1e3b1f5-98ee-46b4-aa2f-d0838baec058.png)
 ![image](https://user-images.githubusercontent.com/51030860/228424965-dbc6e32a-a72b-483f-9f6f-cba79209e7c0.png)
